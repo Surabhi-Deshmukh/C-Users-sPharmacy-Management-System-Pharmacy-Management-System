@@ -1,0 +1,257 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="admin.master.cs" Inherits="admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    
+     
+    <title>MedStore :: Online Store for Medicines, Medical Products </title>
+	<!-- Meta Tags -->
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Bettering Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+	<script type="application/x-javascript">
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!-- // Meta Tags -->
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
+	<!--testimonial flexslider-->
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<!--fonts-->
+	<link href="//fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet" />
+	<link href="//fonts.googleapis.com/css?family=Raleway:300,400,500,600,800" rel="stylesheet" />
+	<!--//fonts-->
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+     <!--Header-->
+	<div class="header">
+	<div class="top">
+			<div class="container">
+						
+					<div class="col-md-12 top-left">
+						<ul>
+                            <li><asp:Label ID="Label2" runat="server" ForeColor="White" Text="Label"></asp:Label></li>
+							<li>
+                                <asp:LinkButton ID="LinkButton2" runat="server" Font-Underline="False" onclick="LinkButton2_Click" CausesValidation="False" Visible="False">
+                                <i class="fa fa-sign-in" aria-hidden="true"></i> Login</asp:LinkButton>
+                            </li>
+							<li>
+                                <asp:LinkButton ID="LinkButton1" runat="server" Font-Underline="False" onclick="LinkButton1_Click" CausesValidation="False" Visible="False">
+                                <i class="fa fa-user-plus" aria-hidden="true"></i>  Signup</asp:LinkButton>
+                            </li>
+							<li>
+                                <asp:LinkButton ID="LinkButton10" runat="server" Font-Underline="False" onclick="LinkButton10_Click" Visible="False" CausesValidation="False">
+                                    <i class="fa fa-sign-out" aria-hidden="true"></i>  Signout</asp:LinkButton>
+                            </li>
+						</ul>
+					</div>
+							
+							
+					<div class="clearfix"></div>
+						
+			</div>
+		</div>
+		<!--top-bar-w3layouts-->
+		<div class="top-bar-w3layouts">
+			<div class="container">
+				<nav class="navbar navbar-default">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<h1><a href="index.aspx">Med Store</a></h1>
+					</div>
+					<!-- navbar-header -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="index.aspx" class="active">Home</a></li>
+							<li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ADD<span class="caret"></span></a>
+							    <ul class="dropdown-menu">
+								    <li><a href="addcategory.aspx">Category</a></li>
+								    <li><a href="subcategory.aspx">Subcategory</a></li>
+								    <li><a href="addbrand.aspx">Brand</a></li>
+								    <li><a href="addmedicine.aspx">Medicine/Product</a></li>
+							
+							    </ul>
+							</li> 
+							<li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Update/Delete<span class="caret"></span></a>
+							    <ul class="dropdown-menu">
+								    <li><a href="udcat.aspx">Category</a></li>
+								    <li><a href="udsubcat.aspx">Subcategory</a></li>
+								    <li><a href="updatebrand.aspx">Brand</a></li>
+                                    <li><a href="udmedicine.aspx">Medicine/Product</a></li>
+
+							    </ul>
+							</li>
+                            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">View<span class="caret"></span></a>
+							    <ul class="dropdown-menu">
+								    <li><a href="listofuser.aspx">User List</a></li>
+								    <li><a href="vieworders.aspx">Order</a></li>
+								    <li><a href="viewmessages.aspx">Messages</a></li>
+                                     <li><a href="viewfeedback.aspx">Feedback</a></li>
+
+							    </ul>
+							</li>
+							
+						</ul>
+
+					</div>
+
+					<div class="search-bar-agileits">
+						<div class="cd-main-header">
+							
+							<!-- cd-header-buttons -->
+						</div>
+						
+					</div>
+
+
+					<div class="clearfix"> </div>
+				</nav>
+			</div>
+
+		</div>
+		<!--//top-bar-w3layouts-->
+		
+		<!--//Slider-->
+	</div>
+	<!--//Header-->
+    <div>
+       
+   
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+            <p>
+                &nbsp;&nbsp;</p>
+        </asp:ContentPlaceHolder>
+          <!-- footer -->
+	
+	<p class="copyright">© Med Store</p>
+	<!-- //footer -->
+    </form>
+    <!-- //footer -->	
+<!-- Required Scripts -->
+	<!-- Common Js -->
+	<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+	<!--// Common Js -->
+	<!--search-bar-agileits-->
+	<script src="js/main.js"></script>
+	<!--//search-bar-agileits-->
+	<!-- start-smoth-scrolling -->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+	    jQuery(document).ready(function ($) {
+	        $(".scroll").click(function (event) {
+	            event.preventDefault();
+	            $('html,body').animate({
+	                scrollTop: $(this.hash).offset().top
+	            }, 1000);
+	        });
+	    });
+	</script>
+	<!-- start-smoth-scrolling -->
+
+	<!-- Banner Responsive slider -->
+	<script src="js/responsiveslides.min.js"></script>
+	<script>
+	    // You can also use "$(window).load(function() {"
+	    $(function () {
+	        // Slideshow 3
+	        $("#slider3").responsiveSlides({
+	            auto: true,
+	            pager: false,
+	            nav: true,
+	            speed: 500,
+	            namespace: "callbacks",
+	            before: function () {
+	                $('.events').append("<li>before event fired.</li>");
+	            },
+	            after: function () {
+	                $('.events').append("<li>after event fired.</li>");
+	            }
+	        });
+
+	    });
+	</script>
+	<!-- // Banner Responsive slider -->
+
+	<!-- flexSlider -->
+	<script defer src="js/jquery.flexslider.js"></script>
+	<script type="text/javascript">
+	    $(window).load(function () {
+	        $('.flexslider').flexslider({
+	            animation: "slide",
+	            start: function (slider) {
+	                $('body').removeClass('loading');
+	            }
+	        });
+	    });
+	</script>
+	<!-- //flexSlider -->
+
+	<!-- stats -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.countup.js"></script>
+	<script>
+	    $('.counter-agileits-w3layouts').countUp();
+	</script>
+	<!-- //stats -->
+	<!-- smooth scrolling -->
+	<script type="text/javascript">
+	    $(document).ready(function () {
+	        /*
+	        var defaults = {
+	        containerID: 'toTop', // fading element id
+	        containerHoverID: 'toTopHover', // fading element hover id
+	        scrollSpeed: 1200,
+	        easingType: 'linear' 
+	        };
+	        */
+	        $().UItoTop({
+	            easingType: 'easeOutQuart'
+	        });
+	    });
+	</script>
+	<a href="#home" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	<!-- //smooth scrolling -->
+
+ <script src="js/bootstrap.js"></script>
+
+ <!-- swipe box js -->
+	<script src="js/jquery.adipoli.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	    $(function () {
+	        $('.row2').adipoli({
+	            'startEffect': 'overlay',
+	            'hoverEffect': 'sliceDown'
+	        });
+	    });
+	</script>
+	<script src="js/jquery.swipebox.min.js"></script>
+	<script type="text/javascript">
+	    jQuery(function ($) {
+	        $(".swipebox").swipebox();
+	    });
+	</script>
+	<!-- //swipe box js -->
+	<!--// Required Scripts -->
+</body>
+</html>
